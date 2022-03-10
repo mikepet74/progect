@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menuItem {
+            font-weight: 800;
+            display: inline-block;
+            width: 120px;
+            cursor: pointer;
+        }
+        .menuItem div {
+            font-weight: 100;
+        }
+        .subMenu {
+            display: none;
+            background-color: white;
+        }
+        .menuItem:hover .subMenu {
+            display: block;
+            position: absolute;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div class="Menu">
+        <div class="menuItem">
+            File
+            <div class="subMenu">
+                <div>
+                    New File
+                </div>
+                <div>
+                    New Window
+                </div>
+            </div>
+        </div>
+        <div class="menuItem">
+            Edit
+            <div class="subMenu">
+                <div>
+                    Undo
+                </div>
+                <div>
+                    Redo
+                </div>
+            </div>
+        </div>
+        <div class="menuItem">
+            Selection
+            <div class="subMenu">
+                <div>
+                    Select all
+                </div>
+                <div>
+                    Expand Selection
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="body">
+        Content 
+    </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="progect.css">
+    <link rel="stylesheet" href="page1.css">
+</head>
+
+<body>
+    <header class="container">
+        <div class="container">
+            <img src="logo.png" alt="logo">
+
+        </div>
+    </header>
+    <nav>
+        <div class="container center">
+            <ul>
+                <li>
+                    <div class="menu"><a href="index.html"> עמוד הבית </a>
+                        <div class="submenu">
+                            <div><a href="index.html#about">אודותינו</a></div>
+                            <div><a href="index.html#categories">קטגוריות</a></div>
+                            <div><a href="index.html#form">טופס הזמנה</a></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu"><a href="page_man.html"> גברים </a>
+                        <div class="submenu">
+                            <div><a href="page_man.html#shirts">חולצות</a></div>
+                            <div><a href="page_man.html#pants">מכנסיים</a></div>
+                            <div><a href="page_man.html#socks">גרביים</a></div>
+                            <div><a href="page_man.html#belts">חגורות</a></div>
+                            <div><a href="page_man.html#ties">עניבות</a></div>
+                            <div><a href="page_man.html#tabel">טבלת מידות</a></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu"><a href="page_women.html"> נשים </a>
+                        <div class="submenu">
+                            <div><a href="page_women.html#coats">מעילים</a></div>
+                            <div><a href="page_women.html#dresses">שמלות</a></div>
+                            <div><a href="page_women.html#shoes">מגפיים</a></div>
+                            <div><a href="page_women.html#wallets">ארנקים</a></div>
+                            <div><a href="page_women.html#jewelry">תכשיטים</a></div>
+                            <div><a href="page_women.html#tabel">טבלת מידות</a></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu"><a href="page_kids.html"> ילדים </a>
+                        <div class="submenu">
+                            <div><a href="page_kids.html#shirts">חולצות</a></div>
+                            <div><a href="page_kids.html#patns">מכנסיים</a></div>
+                            <div><a href="page_kids.html#pajamas">פיג'מות</a></div>
+                            <div><a href="page_kids.html#hats">כובעים</a></div>
+                            <div><a href="page_kids.html#shoes">נעליים</a></div>
+                            <div><a href="page_kids.html#tabel">טבלת מידות</a></div>
+                        </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <content>
+        <div class="container center">
+            <div id="about">
+                <h1>next - האתר שלך להזמנת בגדים</h1>
+                <p>
+                    האתר שלך להזמנת בגדים בצורה פשוטה ומהירה
+                    אצלינו ניתן להזמין שלל בגדים בשלל מידות וצבעים במחירים זולים
+                    <br>
+                    אצילנו דואגים לשירות מעולה מחירים מצויינים ואיכות גבוהה
+                    <br>
+                    תוך שמירה על איכות הסביבה
+                </p>
+            </div>
+            <div id="categories">
+                <a href="page_man.html"><img src="men.jpg" alt="גברים"></a>
+
+                <a href="page_women.html"><img src="women.jpg" alt="נשים"></a>
+                <a href="page_kids.html"><img src="kids.jpg" alt="ילדים"></a>
+            </div>
+        </div>
+
+        <div class="container center">
+            <form action="thanks.html" id="form">
+                <h2>טופס הזמנה</h2>
+                <br>
+                <input name="txt_name" type="text" placeholder="הכנס שם פרטי ומשפחה" required>
+                <br>
+                <input name="txt_mail" type="email" placeholder="הכנס מייל" required>
+                <br>
+                <input name="num_phone" type="tel" placeholder="הכנס מספר טלפון" required>
+
+                <br>
+                <input id="man" type="radio" name="gender" value="man" required>
+                <label for="man">גברים</label>
+                <input id="woman" type="radio" name="gender" value="woman" required>
+                <label for="woman">נשים</label>
+                <input id="kids" type="radio" name="gender" value="kids" required>
+                <label for="kids">ילדים</label>
+                <br>
+                <label>סניף</label>
+                <br>
+                <select name="branch" required>
+                    <option></option>
+                    <option value="ra"> רבי עקיבא </option>
+                    <option value="hk"> הרב כהנמן </option>
+                    <option value="dg"> דב גרונר </option>
+                </select>
+                <br>
+                <label> הכנסס קוד פריט: </label>
+                <br>
+                <textarea name="code"> </textarea>
+                <br>
+                <input id="terms" type="checkbox" required>
+                <label for="terms">מאשר את תקנון האתר</label>
+                <br>
+                <button>שלח הזמנה</button>
+
+            </form>
+        </div>
+    </content>
+
+    <footer>
+        <div class="container">
+            <div class="a">
+                <ul>
+                    <li><strong>רשימת סיניפים:</strong></li>
+                    <li>בני ברק: הרב כהנמן 94</li>
+                    <li>בני ברק: רבי עקיבא 74</li>
+                    <li>בני ברק: דב גרונר 2</li>
+                </ul>
+            </div>
+            <div class="a">
+                <ul>
+                    <li><strong>פרטים ליצירת קשר</strong></li>
+                    <li>טלפון: 0546601114</li>
+                    <li>מייל: <a href="mailto:mike.pet.abc@gmail.com">mike.pet.abc@gmail.com</a></li>
+                    <li><a href="http://wa.me/972546601114">לצאט בווצאפ</a></li>
+                </ul>
+            </div>
+            <div class="a">
+                <ul>
+                    <li><strong>שיתופי פעולה עם:</strong></li>
+                    <li><a
+                            href="https://il.shein.com/?url_from=ilgooglebrandshein_srsa_Shein01_20181109&gclid=Cj0KCQiA95aRBhCsARIsAC2xvfyuOEJKbfwW69h_PrzK967zDCm11iUGEHz_Ug6Fy8RB0hP1_pGsxFoaAtpfEALw_wcB" target="_blank"  >שיין</a>
+                    </li>
+                    <li><a
+                            href="https://www.asos.com/?channelref=paid+search&affid=10700&_Cj0KCQiA95aRBhCsARIsAC2xvfyUEoLu9Q2eDPCksO7P82U0qNT6WhfdrRbK-0k_ZnOtyGMwDo8coB4aAmcSEALw_wcB&channelref=paid+search&ppcadref=9836993742%7c105438010692%7ckwd-295743340262&gclid=Cj0KCQiA95aRBhCsARIsAC2xvfyUEoLu9Q2eDPCksO7P82U0qNT6WhfdrRbK-0k_ZnOtyGMwDo8coB4aAmcSEALw_wcB&gclsrc=aw.ds" target="_blank"  >אסוס</a>
+                    </li>
+                    <li><a
+                            href="https://www.next.co.il/he?gclid=Cj0KCQiA95aRBhCsARIsAC2xvfwQ3CdwNrj55m6XoKG1--2vJMKDTezXpemuFUs93ffsLcTy3eWeSNUaAot7EALw_wcB&gclsrc=aw.ds" target="_blank"  >נקסט</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
